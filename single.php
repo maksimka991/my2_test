@@ -2,9 +2,8 @@
         <div class="content pull-left">
         	
         	<ul class="breadcrumb">
-		        <li><a href="#">Главная</a> <span class="divider">/</span></li>
-		        <li><a href="#">Спецэффекты</a> <span class="divider">/</span></li>
-		        <li class="active">Заголовок статьи</li>
+		       
+                       <?php  the_breadcrumb() ?>
 	        </ul>
         	
               <?php if(have_posts()) : ?>
