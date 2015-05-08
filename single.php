@@ -34,39 +34,9 @@
         		
         		 <?php comments_template( $file = '/comments.php', $separate_comments = false ) ?>
         		
-        		<div class="comment alert alert-success">
-        			<div class="row">
-        				<div class="span1"><img src="images/avatar.png" alt="" /></div>
-        				<div class="span6">
-        					<div class="author"><b>Дмитрий Валак</b></div>
-        				Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца.
-        				</div>
-        			</div>
-        		</div>
+        		 
         		
-        		<form method="post" action="" class="form">
-			        <legend>Оставить комментарий</legend>
-			        
-			        <label>Ваше имя*</label>
-			        <div class="input-prepend">
-			        	<span class="add-on"><i class="icon-user"></i></span><input type="text" placeholder="Вася">
-			        </div>
-			        
-			        <label>Ваш e-mail*</label>
-			        <div class="input-prepend">
-			        	<span class="add-on"><i class="icon-envelope"></i></span><input type="text" placeholder="vasya@mail.ru">
-			        </div>
-			        
-			        <label>Ваш сайт</label>
-			        <div class="input-prepend">
-			        	 <span class="add-on"><i class="icon-home"></i></span><input type="text" placeholder="http://vasya.ru">
-			        </div>
-			        
-					<label>Текст сообщения</label>
-			        <textarea name="text"></textarea>
-			        <br />
-			        <input type="submit" class="btn btn-success" value="Отправить">
-		        </form>
+        		 
         		
         	</div>
         	
