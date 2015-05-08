@@ -65,4 +65,24 @@ function the_breadcrumb() {
 	}
 }
 
+add_theme_support( 'post-thumbnails' );
+
+
+
+// Регистрируем сайдбары
+if ( function_exists('register_sidebar') ) {
+	
+    register_sidebar(array(
+		'name' => 'Правый сайдбар',
+		'before_widget' => '<div class="widget">',
+        'before_title' => '<h2 class="sidebar-header">',
+        'after_title' => '</h2><div class="text">',
+        'after_widget' => '</div></div><hr />'
+	));
+
+
+    register_sidebar(array(
+		'name' => 'bottom сайдбар' 
+	));
+}
  ?>

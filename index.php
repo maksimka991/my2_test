@@ -15,7 +15,10 @@
 
                 </a></span></h1>
         		<div class="image">
-	        		<img src="http://localhost/wordpress/wp-content/themes/my2_test/images/thumb.png" class="img-polaroid" alt="" />
+	        		<?php 
+    if ( function_exists( 'add_theme_support' ) )
+    the_post_thumbnail( array(250,9999), array('class' => 'img-polaroid') ); 
+?>
 				</div>
         		<div class="text">
         			<p>

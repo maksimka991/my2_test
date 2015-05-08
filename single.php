@@ -12,7 +12,7 @@
         <?php while(have_posts()) : the_post(); ?>  
         <br/>
         	<div class="post">
-        		<h1>Заголовок новости</h1>
+        		<h1> <a href="<?php the_permalink() ?>"> <?php the_title( $before = '', $after = '', $echo = true ) ?></a> </h1>
         		<div class="text">
         			<p>  <?php the_content( ) ?></p>
         			
