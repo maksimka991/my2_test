@@ -1,0 +1,16 @@
+/*
+Theme Name:
+Theme URI:
+Description:
+Version:
+Author:
+Author URI:
+License:
+License URI:
+Tags:
+*/
+
+
+==============
+
+Не обязательно использовать все поля.

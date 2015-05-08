@@ -1,0 +1,79 @@
+/* Комментарии + форма */
+
+	/* Контейнер комментария */
+.commentlist {
+	padding: 0;
+	text-align: justify;
+	width: 650px;
+	margin: 10px auto;
+	display: table;
+}
+
+.commentlist .comment {
+	padding: 5px;
+	list-style: none;
+	display: block;
+}
+
+.commentlist .comment .comment {
+	margin: 10px 10px 10px 10px;
+	padding: 5px;
+	width: auto;
+}
+
+	/* Аватарка, имя */
+.comment-author {
+	width: 80px;
+	float: left;
+	text-align: center;
+}
+
+	/* Имя автора */
+.comment-author .fn {
+	font-weight: bold;
+}
+
+	/* двоеточие */
+.comment-author .says {
+	display: none;
+}
+
+	/* Сама аватарка тег img */
+.avatar {
+	width: 60px;
+	border-right: 1px solid #dedcdc;
+	border-bottom: 1px solid #dedcdc;
+	padding: 5px;
+	background: #f8f6f6;
+}
+
+	/* Дата добавления */
+.comment-meta {
+	width: 83%;
+	float: left;
+	border-bottom: 1px dashed #84a719;
+}
+
+	/* Текст комментария */
+.commentlist p {
+	margin: 15px 0 0px 20px;
+	padding-bottom: 10px;
+	width: 80%;
+	float: left;
+	border-bottom: 1px dashed #84a719;
+}
+
+	/* Кнопка "Ответить" */
+.commentlist .reply {
+	width: 98%;
+	float: left;
+	text-align: right;
+	padding: 0 0 5px 0;
+}
+
+	/* Форма отправки комментария */
+.form textarea {
+	resize: vertical;
+	width: 500px;
+	height: 150px;
+}

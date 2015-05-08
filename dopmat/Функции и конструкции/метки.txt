@@ -1,0 +1,9 @@
+<?php
+$posttags = get_the_tags();
+if ($posttags) {
+    foreach($posttags as $tag) {
+    $tag_links[] = '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>';
+    }
+     echo join( ', ', $tag_links );
+}
+?>
