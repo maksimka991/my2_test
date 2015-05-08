@@ -30,18 +30,17 @@
 
             <div class="navbar">
                 <div class="navbar-inner">
-                    <ul class="nav">
-                        <li><a href="#">Главная</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Видеоуроки</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="">Видеомонтаж</a></li>
-                                <li><a href="">Анимация</a></li>
-                                <li><a href="">Спецэффекты</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Об авторе</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
+                    <?php
+                if ( function_exists( 'wp_nav_menu' ) )
+                    wp_nav_menu( 
+                        array( 
+                        'theme_location' => 'custom-menu',
+                        'fallback_cb'=> 'custom_menu',
+                        'container' => 'ul',
+                        'menu_id' => 'nav',
+                        'menu_class' => 'nav') 
+                    );
+                else custom_menu();
+                ?>
                 </div>
             </div>
